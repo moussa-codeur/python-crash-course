@@ -23,10 +23,29 @@ guests.insert(0, 'andre weil')
 guests.insert(2, 'sankare')
 guests.append('ramanujan')
 
-# Affiche les messages des invités dans la console
 print("\nBonjour " + guests[0].title() + ", je t'invite à diner chez moi.")
 print("Bonjour " + guests[1].title() + ", je t'invite à diner chez moi.")
 print("Bonjour " + guests[2].title() + ", je t'invite à diner chez moi.")
 print("Bonjour " + guests[3].title() + ", je t'invite à diner chez moi.")
 print("Bonjour " + guests[4].title() + ", je t'invite à diner chez moi.")
 print("Bonjour " + guests[5].title() + ", je t'invite à diner chez moi.")
+
+# Indique que je peux inviter que deux personnes aux dinners
+print("\nDésolez, je ne peux inviter que deux personnes aux dîners.")
+
+# Retire le dernier invité puis affiche un message dans la console
+pop_guest = guests.pop()
+print("\nJe suis désolé " + pop_guest.title() + " de ne plus vous inviter au dîner")
+pop_guest = guests.pop()
+print("Je suis désolé " + pop_guest.title() + " de ne plus vous inviter au dîner")
+pop_guest = guests.pop()
+print("Je suis désolé " + pop_guest.title() + " de ne plus vous inviter au dîner")
+pop_guest = guests.pop()
+print("Je suis désolé " + pop_guest.title() + " de ne plus vous inviter au dîner")
+
+# Affiche un message a chacun des deux qu'ils sont invités
+print("\nBonjour " + guests[0].title() + ", je t'invite à diner chez moi.")
+print("Bonjour " + guests[1].title() + ", je t'invite à diner chez moi.")
+
+print("\nThe number of guests is : ")
+print(len(guests))
